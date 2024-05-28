@@ -35,6 +35,12 @@ const Work = () => {
     }, 500);
   };
 
+  const [opacity, setOpacity] = useState(0);
+
+  const handleHover = () => {
+    setOpacity(opacity === 0 ? 1 : 0);
+  };
+
   return (
     <>
       <h2 className="head-text">
@@ -44,15 +50,14 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {["Full Stack", "Web App", "AI/ML", "Next Js", "React Js", "All"].map(
+        {["Full Stack", "Web App", "MERN", "React Js", "All"].map(
           (item, index) => {
             return (
               <div
                 key={index}
                 onClick={() => handleWorkFilter(item)}
-                className={`app__work-filter-item app__flex p-text ${
-                  activeFilter === item ? "item-active" : ""
-                }`}
+                className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""
+                  }`}
               >
                 {item}
               </div>
@@ -72,13 +77,16 @@ const Work = () => {
               <div className="app__work-img app__flex">
                 <img src={urlFor(work.imgUrl)} alt={work.name} />
                 <motion.div
-                  whileHover={{ opacity: [0, 1] }}
+                  // whileHover={{ opacity: [0, 1] }}
+                  whileHover={{ opacity: opacity }}
                   transition={{
                     duration: 0.5,
                     ease: "easeInOut",
                     staggerChildren: 0.5,
                   }}
                   className="app__work-hover app__flex"
+                  onMouseEnter={handleHover}
+                  onMouseLeave={handleHover}
                 >
                   {work.projectLink && (
                     <a href={work.projectLink} target="_blank" rel="noreferrer">
@@ -90,7 +98,7 @@ const Work = () => {
                         }}
                         className="app__flex"
                       >
-                        <AiFillEye />
+                        <AiFillEye color="#fff" />
                       </motion.div>
                     </a>
                   )}
@@ -103,7 +111,7 @@ const Work = () => {
                       }}
                       className="app__flex"
                     >
-                      <AiFillGithub />
+                      <AiFillGithub color="fff" />
                     </motion.div>
                   </a>
                 </motion.div>

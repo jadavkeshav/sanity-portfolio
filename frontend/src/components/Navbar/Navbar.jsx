@@ -11,7 +11,9 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div style={{ display: "flex", alignItems: "center", marginLeft: "-0.5rem", width: "150px" }}>
-        <img src={images.logo} width={150}  height={120} alt="Logo"></img>
+        <a href="/">
+          <img src={images.logo} width={150} height={140} alt="Logo" style={{marginTop: "0.75rem"}} ></img>
+        </a>
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map(
@@ -63,7 +65,7 @@ const Navbar = () => {
                       <BsLinkedin />
                     </span>
                   </a>
-                  
+
                 </span>
               </ul>
             </div>
