@@ -14,7 +14,7 @@ const Navbar = () => {
         <img src={images.logo} width={150}  height={120} alt="Logo"></img>
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "testimonials", "contact"].map(
+        {["home", "about", "work", "skills", "contact"].map(
           (item) => {
             return (
               <li className="app__flex p-text" key={`link-${item}`}>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 ))}
                 <span style={{ display: "flex", flexDirection: "row" }}>
                   <a
-                    href="https://github.com/AmanBhanse"
+                    href="https://github.com/jadavkeshav"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -55,7 +55,7 @@ const Navbar = () => {
                     </span>
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/aman-bhanse/"
+                    href="https://www.linkedin.com/in/jadav-keshav/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -63,15 +63,7 @@ const Navbar = () => {
                       <BsLinkedin />
                     </span>
                   </a>
-                  <a
-                    href="https://twitter.com/bhanse_aman"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>
-                      <BsTwitter />
-                    </span>
-                  </a>
+                  
                 </span>
               </ul>
             </div>
