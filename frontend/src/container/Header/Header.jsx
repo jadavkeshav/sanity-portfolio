@@ -31,7 +31,7 @@ const Header = () => {
             <div style={{ textAlign: "left", fontSize: "1.5rem", marginTop: "-2rem" }} >
               
               <Typewriter
-                words={['Passionate', 'Creative', 'Detail-oriented', 'Full-stack Developer','FreeLancer', 'Programmer', 'Web Developer']}
+                words={['Full-stack Developer','FreeLancer', 'Programmer', 'Web Developer']}
                 loop={5}
                 cursor
                 cursorStyle=' | '
