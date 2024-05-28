@@ -36,7 +36,7 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import avatar from "../assets/profile-pic2.jpg"
 
-import resume from "../assets/keshavresume2.pdf"
+import resume from "../assets/keshavresume1.pdf"
 
 export default {
     resume,

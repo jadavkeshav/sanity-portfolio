@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
-      <div style={{ display: "flex", alignItems: "center", marginLeft: "-0.5rem" }}>
+      <div style={{ display: "flex", alignItems: "center", marginLeft: "-0.5rem", width: "150px" }}>
         <img src={images.logo} width={150}  height={120} alt="Logo"></img>
       </div>
       <ul className="app__navbar-links">

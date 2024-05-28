@@ -6,7 +6,7 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
       <a
-        href="https://github.com/RohittCodes"
+        href="https://github.com/jadavkeshav"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -15,7 +15,7 @@ const SocialMedia = () => {
         </div>
       </a>
       <a
-        href="https://www.linkedin.com/in/rohittcodes/"
+        href="https://www.linkedin.com/in/jadav-keshav/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -23,15 +23,15 @@ const SocialMedia = () => {
           <BsLinkedin />
         </div>
       </a>
-      <a
-        href="https://twitter.com/rohittcodes"
+      {/* <a
+        href="https://twitter.com/jadavkeshav"
         target="_blank"
         rel="noopener noreferrer"
       >
         <div>
           <BsTwitter />
         </div>
-      </a>
+      </a> */}
     </div>
   );
 };
