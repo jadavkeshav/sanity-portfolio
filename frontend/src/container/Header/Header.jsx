@@ -23,7 +23,7 @@ const Header = () => {
             {"Hey there, I'm"}
             <h1
               className="head-text"
-              style={{ textAlign: "left", color: "orange" }}
+              style={{ textAlign: "left", color: "#FF0000" }}
             >
               {`Jadav Keshav`}
             </h1>
