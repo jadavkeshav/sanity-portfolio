@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.scss";
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import { Typewriter } from 'react-simple-typewriter'
+import { client, urlFor } from "../../client";
 
 const Header = () => {
+
+  const [data, setData] = useState("");
+  
+  useEffect(() => {
+    console.log("hi")
+    const query = "*[_type == 'profile']";
+    client.fetch(query).then((data) => setData(data[0]));
+  }, []);
+
   return (
     <section id="profile">
       <div className="section__pic-container">
-        <img src={images.avatar} alt="John Doe profile picture" />
+        <img src={ data ? urlFor(data.imgUrl): images.avatar} alt={data} />
       </div>
       <div className="section__text">
         <div>
