@@ -25,6 +25,9 @@ const Navbar = () => {
             );
           }
         )}
+        <li className="app__flex p-text" key={`link-Blog`}>
+                <a href={`https://jadavsmindspace.vercel.app/user/jadavkeshav`}>BLOGS</a> <div />
+              </li>
       </ul>
 
       <div className="app__navbar-menu">
