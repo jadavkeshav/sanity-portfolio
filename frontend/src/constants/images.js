@@ -34,7 +34,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-import avatar from "../assets/profile-pic2.jpg"
+import avatar from "../assets/profile-pic3.jpg"
 
 import resume from "../assets/jadavkeshav.pdf"
 
